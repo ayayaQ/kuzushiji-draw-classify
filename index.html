@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuzushiji Drawer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="draw.js?v=00" defer></script>
+    <script src="slider.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas" width="512px" height="512px"></canvas>
+
+    <div>
+        <button onclick="erase();">Clear</button>
+        <button onclick="predict();">Predict</button>
+        <input type="range" min="5" max="50" value="25" class="slider" id="lineWidth">
+        <span id="lineWidthDisplay">25</span>
+        <p id="result">Draw a kuzushiji style character</p>
+    </div>
+
+</body>
+
+</html>
