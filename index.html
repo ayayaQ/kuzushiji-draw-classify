@@ -13,14 +13,21 @@
 </head>
 
 <body>
-    <canvas id="canvas" width="512px" height="512px"></canvas>
+
+    <div><h1>Kuzushiji Classifier</h1></div>
+
+    <div>
+        <canvas id="canvas" width="512px" height="512px"></canvas>
+        <p id="result">Draw a kuzushiji style character</p>
+    </div>
 
     <div>
         <button onclick="erase();">Clear</button>
         <button onclick="predict();">Predict</button>
+        <p>Line Width</p>
         <input type="range" min="5" max="50" value="25" class="slider" id="lineWidth">
         <span id="lineWidthDisplay">25</span>
-        <p id="result">Draw a kuzushiji style character</p>
+
     </div>
 
 </body>
